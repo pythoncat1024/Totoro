@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.historycategory.CategoryFragment">
+
+    <!-- 一些公共的布局，比如 loading 界面，error 界面，empty 界面 -->
+    <include layout="@layout/common_layout" />
+    <!--content-->
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_swipe_fragment_history_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_history_title"
+        android:background="#33ff0000">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_fragment_history_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

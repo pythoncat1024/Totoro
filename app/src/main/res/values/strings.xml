@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Totoro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="skip">skip</string>
+    <string name="goto_main">%1$s秒后进入主界面</string>
+    <string name="goto_main2">进入主界面中...</string>
+    <string name="email">pythoncat818@gmail.com</string>
+    <string name="author_name">pythonCat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data">当前没有数据</string>
+    <string name="load_error">加载失败，请重试</string>
+    <string name="useless">没意义的东西</string>
+    <string name="history_title">历史干货</string>
+    <string name="detail_url_null">当前链接为空，没有详情页了...</string>
+    <string name="slideshow_fragment">我是slideshow Fragment</string>
+    <string name="show_or_hide_control_tip">显示/隐藏 下面的布局</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/launcher_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.LauncherActivity">
+
+    <ImageView
+        android:background="#f00"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_ad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/small_yellow" />
+
+    <RelativeLayout
+
+        android:id="@+id/skip_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary_trans"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:padding="5dp"
+            android:text="@string/skip"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

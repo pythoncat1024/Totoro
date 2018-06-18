@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pythoncat.totoro.activity.historyitem.HistoryItemActivity">
+
+    <!--没有数据的时候，留着标题；有数据的时候，隐藏标图-->
+    <TextView
+        android:id="@+id/tv_title_activity_item_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="历史 item页面"
+        android:textSize="18sp"
+        android:visibility="visible" />
+    <!-- 一些公共的布局，比如 loading 界面，error 界面，empty 界面 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title_activity_item_history"
+        android:background="#3f00">
+
+        <include layout="@layout/common_layout" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout_activity_item_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_title_activity_item_history"
+        android:orientation="vertical">
+        <!-- app:tabMode="scrollable" 滚动的，数据多的时候使用-->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_title_layout_history_item_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabIndicatorColor="@color/white"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@color/white" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_pager_history_item_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>
